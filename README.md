@@ -33,3 +33,7 @@ Switch to version of node js:  **v12.11.1** (for gulp watch) :
 
 Run `npm run start` and develop in `src` folder.
 Open browser on link [localhost:3000](http://localhost:3000 "localhost:3000")
+
+## Live demo
+
+[Demo](https://golveronika.github.io/TheClassroom "Demo")
