@@ -1,0 +1,167 @@
+.page
+    display: flex
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden
+    &-body
+        overflow: auto
+        position: relative
+        .content
+            margin-top: 50px
+            min-height: 300px
+        .top-menu
+            width: 1080px;
+            margin: 25px auto;
+            button
+                padding: 5px 15px;
+                margin: 0px 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                color: white;
+                box-shadow: 7px 7px 5px -5px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                background-color: #EDA483;
+                &:hover
+                    background-color: #dddddd;
+    &-head
+        display: flex
+        flex-direction: row;
+        justify-content: space-between
+        width: 100%;
+        background: $main-color-dark;
+        background: -moz-linear-gradient(top, $main-color-dark 0%, $main-color-light 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, $main-color-dark), color-stop(100%, $main-color-light));
+        background: -webkit-linear-gradient(top, $main-color-dark 0%, $main-color-light 100%);
+        background: -o-linear-gradient(top, $main-color-dark 0%, $main-color-light 100%);
+        background: -ms-linear-gradient(top, $main-color-dark 0%, $main-color-light 100%);
+        background: linear-gradient(to bottom, $main-color-dark 0%, $main-color-light 100%);
+        .logout
+            display: flex
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding-right: 20px;
+            font-size: 20px;
+            button
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+                font-size: 17px;
+                color: #EDA483;
+                box-shadow: 10px 10px 8px -6px rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+                margin-top: 10px;
+                background-color: white
+                &:hover
+                    background-color: #dddddd;
+        .logo
+            text-align: center
+            flex: 1
+            font-weight: 700;
+            font-size: 50px
+            padding: 20px
+            color: transparent;
+            background: black;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+            sup
+                font-size: 20px
+table.main-table
+    border: 2px solid #c3c3c3;
+    padding: 10px;
+    border-radius: 10px;
+    border-spacing: 0;
+    margin: auto;
+    thead
+        background-color: #dcdbdb;
+        border: none;
+        th
+            padding: 10px;
+            font-weight: 700
+            user-select: none;
+            position: relative;
+            white-space: nowrap;
+    tbody tr td
+            padding: 10px
+            border-bottom: 2px solid #dcdbdb;
+            white-space: nowrap
+            button
+                padding: 5px 15px;
+                margin: 0px 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+                color: white;
+                box-shadow: 7px 7px 5px -5px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                background-color: #EDA483;
+                &:last-child
+                    background-color: #cc2500;
+                    &:hover
+                        background-color: #9a1c00;
+                &:hover
+                    background-color: #dddddd;
+    tbody tr:last-child td
+            border-bottom: none
+button:focus
+    outline: none
+
+.noresult
+    color: #a0a0a0
+
+.filter-icon
+    background: #bbbbbb;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+.modal-filter
+    position: absolute
+    background: white;
+    border: 2px solid #b3b3b3;
+    border-radius: 5px;
+    padding: 10px;
+    left: 60px;
+    bottom: 35px
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    label
+        display: inline-flex;
+        input
+            padding: 5px
+            border-radius: 5px
+            border: 1px solid gray
+            outline: none
+            margin-left: 10px;
+    & > div:not(.date-container)
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    & > div.date-container
+        text-align: left;
+        label:first-child
+            margin-top: 10px
+        label:last-child
+            margin-top: 5px
+        label
+            p
+                width: 44px;
+        input 
+            padding: 5px
+    span
+        background: #d8d8d8;
+        padding: 3px 6px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0px 5px;
+
+.filter-select
+    padding: 5px
+    margin-left: 5px;
+    min-width: 100px;

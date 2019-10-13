@@ -1,0 +1,64 @@
+.nav
+    width: 370px
+    margin-bottom: 20px
+    button
+        padding: 5px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 24px;
+        color: white;
+        box-shadow: 10px 10px 8px -6px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+        background-color: #EDA483;
+        &:hover
+            background-color: #dddddd;
+.view-page
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    &-inner
+        border: 2px solid #c3c3c3;
+        border-radius: 10px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px
+        width: 300px
+        position: relative;
+        input
+            font-size: 20px
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            width: 275px;
+        select 
+            font-size: 20px;
+            height: 45px;
+            width: 100%;
+        .view-label
+            color: $color-label
+            font-weight: 900;
+            margin-bottom: 10px
+            margin-top: 20px
+            text-transform: uppercase;
+            &:first-child
+                margin-top: 0
+        button.save
+            padding: 5px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            color: white;
+            box-shadow: 10px 10px 8px -6px rgba(0, 0, 0, 0.75);
+            cursor: pointer;
+            background-color: #EDA483;
+            max-width: 100px;
+            margin-top: 20px;
+            &:hover
+                background-color: #dddddd;
+
+.react-datepicker__day--outside-month
+    opacity: 0.3;

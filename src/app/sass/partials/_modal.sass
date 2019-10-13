@@ -1,0 +1,85 @@
+
+.modal-close-ideas
+    cursor: pointer
+    font-size: 36px;
+    float: right
+
+.ideas-modal 
+    display: flex
+    animation: fade-in 0.4s ease;
+    position: fixed;
+    transform: translate(0,0);
+    width: auto; left: 0; right: 0;
+    height: auto; top: 0; bottom: 0;
+    z-index: 990;
+    background: transparent;
+
+.ideas-modal.ideas-flex-center 
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -ms-flex-align: center;
+    flex-align: center;
+    -webkit-align-items: center;
+    -webkit-align-content: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    moz-box-pack: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+    flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+.ideas-modal .ideas-shade
+	display: block;
+	position: absolute;
+	width: auto; left: 0; right: 0;
+	height: auto; top: 0; bottom: 0;
+	box-sizing: border-box;
+	z-index: 2000; 
+	opacity: 0.3;
+	background: #222222;
+
+.ideas-modal .ideas-inner
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: relative;
+    z-index: 2001;
+    background: #ffffff;
+    padding: 40px;
+    scrollbar-width: none;  
+    border-radius: 7px
+
+.other-inner
+    display: flex;
+    flex-direction: column-reverse;
+
+.condition-form
+    display: flex
+    flex-direction: column
+    margin-top: 10px;
+    max-width: 300px;
+    text-align: center;
+    span
+        font-size: 20px
+    button
+        padding: 9px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        color: white;
+        box-shadow: 10px 10px 8px -6px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        margin: 20px 10px;
+        &:first-child
+            background-color: #cc2500
+        &:last-child
+            background-color: #EDA483            
+        &:hover
+            background-color: #dddddd;
